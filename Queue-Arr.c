@@ -11,6 +11,7 @@ int32_t rear = -1;
 
 void Enqueue(int32_t data);
 void Dequeue();
+int32_t Front();
 bool isFUll();
 bool isEmpty();
 void Print();
@@ -75,4 +76,8 @@ void Print() {
         temp = temp % MAX;
     }
     printf("%" PRId32 "\n", queue[rear]);
+}
+
+int32_t Front() {
+    return queue[front];
 }
